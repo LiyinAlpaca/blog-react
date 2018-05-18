@@ -1,9 +1,7 @@
 ## branch gh-pages
 
-$ git subtree add --prefix build origin gh-pages<br>
 $ git subtree push --prefix build origin gh-pages<br>
 <br>
-add 添加dist目录 如果主分支包含了dist 则忽略<br>
 dist 代表子树所在的目录名<br>
 origin 是 remote name<br>
 gh-pages 是目标分支名称<br>
