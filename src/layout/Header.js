@@ -9,11 +9,7 @@ import {
     Collapse,
     Nav,
     NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+    NavLink
 } from 'reactstrap';
 
 export default class Header extends React.Component {
@@ -39,13 +35,13 @@ export default class Header extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
              <NavItem>
-                <Link to="/home" className="nav-link">Home</Link>
+                <NavLink tag={Link} to="/home">Home</NavLink>
             </NavItem>
             <NavItem>
-                <Link to="/about" className="nav-link">About</Link>
+                <NavLink tag={Link} to="/about">About</NavLink>
             </NavItem>
             <NavItem>
-                <Link to="/article" className="nav-link">Article</Link>
+                <NavLink tag={Link} to="/article">Article</NavLink>
             </NavItem>
             <NavItem>
                 <NavLink href="https://github.com/LiyinAlpaca/blog">GitHub</NavLink>

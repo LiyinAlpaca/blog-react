@@ -4,6 +4,7 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './layout/Header';
+import UserCard from './component/UserCard';
 import {
   Collapse,
   Navbar,
@@ -23,6 +24,7 @@ const Home = () => (
   <div>
     <Header />
     <h1>Home!</h1>
+    <UserCard></UserCard>
   </div>
 );
 const About = () => (

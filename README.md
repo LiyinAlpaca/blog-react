@@ -1,6 +1,8 @@
 ## branch gh-pages
 
 $ git subtree push --prefix build origin gh-pages<br>
+$ git push origin `git subtree split --prefix build master`:gh-pages --force<br>
+
 <br>
 dist 代表子树所在的目录名<br>
 origin 是 remote name<br>
