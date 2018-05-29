@@ -1,32 +1,12 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import ReactDOM from 'react-dom';
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './css/App.css';
+import './css/font-awesome.min.css';
 import Header from './layout/Header';
-import UserCard from './component/UserCard';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from 'reactstrap';
+import Home from './page/Home';
 
 
-const Home = () => (
-  <div>
-    <Header />
-    <h1>Home!</h1>
-    <UserCard></UserCard>
-  </div>
-);
 const About = () => (
   <div>
     <Header />
@@ -49,6 +29,7 @@ const NotFoundPage = () => (
   </div>
 );
 
+//前端路由
 const App = () => (
   <Router>
     <Switch>

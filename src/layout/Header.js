@@ -9,7 +9,8 @@ import {
     Collapse,
     Nav,
     NavItem,
-    NavLink
+    NavLink,
+    Container
 } from 'reactstrap';
 
 export default class Header extends React.Component {
@@ -28,9 +29,10 @@ export default class Header extends React.Component {
   }
   render() {
     return (
-      <div className="header">
+      <header>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">BLOG</NavbarBrand>
+        <Container>
+          <NavbarBrand tag={Link} to="/">BLOG</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
@@ -48,8 +50,9 @@ export default class Header extends React.Component {
             </NavItem>
             </Nav>
           </Collapse>
+          </Container>
         </Navbar>
-      </div>
+      </header>
     );
   }
 }
